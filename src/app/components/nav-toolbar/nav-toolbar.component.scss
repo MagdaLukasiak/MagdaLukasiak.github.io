@@ -1,0 +1,14 @@
+nav {
+  @apply flex flex-row flex-grow;
+  a {
+      text-align: center;
+      width: 100%;
+      padding: 1.2rem 0;
+      font-size: 1rem;
+      border: 1px solid #EBEBEB;
+      color: #555555;
+      &:hover {
+        color: #117311;
+      }
+  }
+}

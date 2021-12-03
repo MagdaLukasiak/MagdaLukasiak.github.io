@@ -1,0 +1,5 @@
+<nav>
+    <a *ngFor="let tab of tabs" [routerLink]="[tab.path]">
+      {{tab.title | uppercase}}
+    </a>
+</nav>
