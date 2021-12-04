@@ -8,7 +8,12 @@ nav {
       border: 1px solid #EBEBEB;
       color: #555555;
       &:hover {
-        color: #117311;
+        color: #20f120;
       }
   }
+}
+
+.active {
+  border: 1px solid #117311 !important;
+  color: #117311 !important;
 }

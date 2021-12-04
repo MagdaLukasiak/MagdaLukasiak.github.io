@@ -1,4 +1,9 @@
 .card-container {
+  .project-miniature {
+    min-width: 160px;
+    width: 160px;
+    height: 130px;
+  }
   padding: 2rem 1.5rem;
   div {
     padding-left: 2rem;

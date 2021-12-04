@@ -1,5 +1,7 @@
 <nav>
-    <a *ngFor="let tab of tabs" [routerLink]="[tab.path]">
+    <a *ngFor="let tab of tabs"
+       [routerLink]="[tab.path]"
+       [routerLinkActive]="'active'">
       {{tab.title | uppercase}}
     </a>
 </nav>
