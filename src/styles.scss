@@ -30,7 +30,36 @@ h3 {
 .linkedin-btn {
   height: 2.3rem;
   min-width: 12rem;
+  max-width: 15rem;
+
   @apply px-4 py-2 flex items-center whitespace-nowrap justify-center;
   border: 3px solid #7B964A;
   border-radius: 99999px;
+}
+
+.section-menu-page {
+  @apply overflow-auto h-screen px-20 py-10;
+}
+
+.face-pic-container {
+  min-width: 238px;
+  min-height: 238px;
+  z-index: 1;
+  margin-right: 1rem;
+
+  .face-pic-frame {
+    border: 5px solid #7C9A58;
+    position: absolute;
+    z-index: 3;
+    min-width: 238px;
+    min-height: 238px;
+  }
+  .face-pic-bg {
+    min-width: 238px;
+    min-height: 238px;
+    position: absolute;
+    z-index: 2;
+    background-color: #6c824f;
+    transform: translate(4%, -4%);
+  }
 }
