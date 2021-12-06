@@ -10,6 +10,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { ChipComponent } from './components/chip/chip.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ResizeCheckDirective } from './resize-check.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ChipComponent } from './components/chip/chip.component';
     AboutComponent,
     ContactComponent,
     ProjectCardComponent,
-    ChipComponent
+    ChipComponent,
+    HomeComponent,
+    ResizeCheckDirective
   ],
   imports: [
     BrowserModule,

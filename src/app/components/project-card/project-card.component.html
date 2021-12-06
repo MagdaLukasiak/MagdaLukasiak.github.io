@@ -1,15 +1,15 @@
-<div *ngIf="options" class="card-container flex flex-row">
-  <img class="project-miniature"
+<div *ngIf="options" class="card-container flex flex-col sm:flex-row items-center">
+  <img class="project-miniature mb-4"
        [src]="options.imgPath"
        alt="image-path">
   <div class="flex flex-col space-y-3">
       <h2>{{options.header}}</h2>
       <h3>{{options.description}}</h3>
-      <div class="flex flex-row space-x-2 flex-wrap">
-        <chip *ngFor="let tag of options.tags" [title]="tag"></chip>
+      <div class="flex flex-row space-x-2 flex-wrap justify-content-center">
+        <chip *ngFor="let tag of options.tags" [title]="tag" class="pt-2"></chip>
       </div>
   </div>
-  <img class="ml-auto" [src]="'assets/icons/arrow.png'" [style.height]="'25px'" [style.min-width]="'20px'">
+  <img class="ml-auto" [src]="'assets/icons/arrow.png'" [style.height]="'1.2rem'" [style.min-width]="'.8rem'">
 </div>
 <hr>
 

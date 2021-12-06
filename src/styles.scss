@@ -6,6 +6,7 @@
 //@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@200;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Slab:wght@200;300&display=swap');
+@import './themes.scss';
 
 html, body, *{
   margin: 0;
@@ -29,8 +30,8 @@ h3 {
 
 .linkedin-btn {
   height: 2.3rem;
-  min-width: 12rem;
-  max-width: 15rem;
+  width: 12rem;
+  //max-width: 15rem;
 
   @apply px-4 py-2 flex items-center whitespace-nowrap justify-center;
   border: 3px solid #7B964A;
@@ -46,6 +47,9 @@ h3 {
   min-height: 238px;
   z-index: 1;
   margin-right: 1rem;
+  position: relative;
+  overflow: visible;
+  margin-bottom: 4rem !important;
 
   .face-pic-frame {
     border: 5px solid #7C9A58;
@@ -61,5 +65,14 @@ h3 {
     z-index: 2;
     background-color: #6c824f;
     transform: translate(4%, -4%);
+  }
+}
+
+@media (max-width: $bp-sm) {
+  h2 {
+    font-size: 3rem;
+  }
+  .section-menu-page {
+    @apply overflow-auto h-screen px-10 py-4;
   }
 }
