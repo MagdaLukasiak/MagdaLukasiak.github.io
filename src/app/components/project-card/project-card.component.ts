@@ -5,6 +5,7 @@ export interface ProjectCardInput {
   header: string;
   description: string;
   tags: string[];
+  pdfPath: string;
 }
 
 @Component({

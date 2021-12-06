@@ -18,8 +18,6 @@ export class AppComponent implements OnInit, OnDestroy{
   ngOnInit() {
     if(window.innerWidth > 560) {
       this.showTitle = true;
-      console.log(window.innerWidth);
-      console.log(this.showTitle);
     }
 
     fromEvent(window, 'resize').pipe(takeUntil(this.onDestroy))
@@ -29,9 +27,6 @@ export class AppComponent implements OnInit, OnDestroy{
         } else {
           this.showTitle = false
         }
-        console.log(window.innerWidth);
-        console.log(this.showTitle);
-
       });
   }
 

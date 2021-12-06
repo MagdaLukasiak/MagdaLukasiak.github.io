@@ -11,7 +11,6 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { ChipComponent } from './components/chip/chip.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ResizeCheckDirective } from './resize-check.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +22,6 @@ import { ResizeCheckDirective } from './resize-check.directive';
     ProjectCardComponent,
     ChipComponent,
     HomeComponent,
-    ResizeCheckDirective
   ],
   imports: [
     BrowserModule,
