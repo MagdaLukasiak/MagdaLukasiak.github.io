@@ -3,5 +3,7 @@ span {
   border-color: #565656;
   border: 1px solid #565656;
   color: #565656;
-  padding: 0 2rem;
+  padding: 0 1rem;
+  word-break: keep-all;
+  white-space: nowrap;
 }

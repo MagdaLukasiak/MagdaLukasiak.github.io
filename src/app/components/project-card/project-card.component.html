@@ -1,16 +1,16 @@
 <div *ngIf="options" class="card-container flex flex-col sm:flex-row items-center">
   <a [href]="options.pdfPath" target="_blank">
-    <img class="project-miniature mb-4"
-         [src]="options.imgPath"
-         alt="image-path">
+    <div class="project-miniature">
+      <img class="mb-4"
+           [src]="options.imgPath"
+           alt="image-path">
+    </div>
   </a>
-  <div class="flex flex-col space-y-3">
+  <div class="project-info flex flex-col space-y-3">
       <a [href]="options.pdfPath" target="_blank"><h2>{{options.header}}</h2></a>
       <h3>{{options.description}}</h3>
-      <div class="flex flex-row space-x-2 flex-wrap justify-content-center">
-        <a [href]="options.pdfPath" target="_blank">
-          <chip *ngFor="let tag of options.tags" [title]="tag" class="pt-2"></chip>
-        </a>
+      <div class="flex flex-row justify-content-center flex-wrap">
+        <chip *ngFor="let tag of options.tags" [title]="tag" class="m-1"></chip>
       </div>
   </div>
   <a [href]="options.pdfPath" target="_blank" class="ml-auto p-2">
