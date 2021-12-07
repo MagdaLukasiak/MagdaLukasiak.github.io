@@ -1,14 +1,17 @@
+@import '../../../themes';
+
 nav {
   @apply flex flex-row flex-grow;
   a {
       text-align: center;
       width: 100%;
       padding: 1.2rem 0;
-      font-size: 1rem;
+      font-size: 1.3rem;
+      font-family: 'Lato', sans-serif;
       border: 1px solid #EBEBEB;
       color: #555555;
       &:hover {
-        color: #20f120;
+        color: #117311;
       }
   }
 }
@@ -16,4 +19,14 @@ nav {
 .active {
   border: 1px solid #117311 !important;
   color: #117311 !important;
+}
+
+@media (max-width: $bp-sm) {
+  nav {
+    a {
+      padding: .5rem 0;
+      font-size: .8rem;
+    }
+  }
+
 }

@@ -1,27 +1,25 @@
 @import '../../../themes';
 
 .card-container {
+  &:hover {
+    border: 1px solid #117311;
+  }
   .project-miniature {
-      width: 180px;
-      min-width: 180px;
+      width: 240px;
+      min-width: 220px;
       height: auto;
+    img {
+      width: 100%;
+    }
   }
 
   .project-info {
+    padding-left: 2rem;
     width: 100%;
     height: auto;
   }
 
   padding: 2rem 1.5rem;
-  div {
-    padding-left: 2rem;
-    h2 {
-      font-size: 2rem;
-    }
-    h3 {
-      font-size: 1.2rem;
-    }
-  }
 }
 
 @media (max-width: $bp-sm) {

@@ -1,21 +1,17 @@
-<div *ngIf="options" class="card-container flex flex-col sm:flex-row items-center">
-  <a [href]="options.pdfPath" target="_blank">
-    <div class="project-miniature">
+<a *ngIf="options" [href]="options.pdfPath" target="_blank">
+  <div class="card-container flex flex-col sm:flex-row items-center">
+    <div  class="project-miniature lg:ml-16">
       <img class="mb-4"
            [src]="options.imgPath"
            alt="image-path">
     </div>
-  </a>
-  <div class="project-info flex flex-col space-y-3">
-      <a [href]="options.pdfPath" target="_blank"><h2>{{options.header}}</h2></a>
-      <h3>{{options.description}}</h3>
-      <div class="flex flex-row justify-content-center flex-wrap">
-        <chip *ngFor="let tag of options.tags" [title]="tag" class="m-1"></chip>
-      </div>
+    <div class="project-info flex flex-col space-y-3">
+        <a [href]="options.pdfPath" target="_blank"><h2>{{options.header}}</h2></a>
+        <h3>{{options.description}}</h3>
+        <div class="flex flex-row justify-content-start flex-wrap">
+          <chip *ngFor="let tag of options.tags" [title]="tag" class="m-1"></chip>
+        </div>
+    </div>
   </div>
-  <a [href]="options.pdfPath" target="_blank" class="ml-auto p-2">
-    <img [src]="'assets/icons/arrow.png'" [style.height]="'1.2rem'" [style.min-width]="'.8rem'">
-  </a>
-</div>
+</a>
 <hr>
-

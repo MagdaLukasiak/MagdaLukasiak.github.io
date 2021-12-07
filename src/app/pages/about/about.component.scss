@@ -1,12 +1,31 @@
 @import '../../../themes.scss';
 
 ul {
-  columns: 1;
   list-style: inside;
 }
 
-@media (min-width: $bp-md) {
-  ul {
-    columns: 2;
+.about-sub-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: auto;
+}
+
+.col-about {
+  min-width: 300px;
+}
+
+@media (min-width: $bp-md) and (max-width: $bp-lg) {
+  .about-sub-container {
+    flex-direction: column;
+  }
+  .linkedin-btn {
+    @apply mt-2;
+  }
+}
+
+@media (max-width: $bp-sm) {
+  .about-sub-container {
+    flex-direction: column;
   }
 }
