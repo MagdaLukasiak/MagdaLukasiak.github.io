@@ -11,6 +11,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { ChipComponent } from './components/chip/chip.component';
 import { HomeComponent } from './pages/home/home.component';
+import {HashLocationStrategy, LocationStrategy} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { HomeComponent } from './pages/home/home.component';
     AppRoutingModule,
     RouterModule
   ],
-  providers: [],
+  providers: [
+    {provide : LocationStrategy , useClass: HashLocationStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
